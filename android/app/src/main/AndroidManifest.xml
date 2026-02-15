@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
       android:name=".MainApplication"
@@ -23,5 +27,14 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+
+      <service
+        android:name="com.bikemessenger.floating.FloatingWindowService"
+        android:exported="false"
+        android:foregroundServiceType="specialUse">
+        <meta-data
+          android:name="android.app.FOREGROUND_SERVICE_SPECIAL_USE"
+          android:value="Floating overlay widget for quick bike messaging over other apps" />
+      </service>
     </application>
 </manifest>

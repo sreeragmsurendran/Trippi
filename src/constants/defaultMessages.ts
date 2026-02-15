@@ -1,0 +1,68 @@
+import { BikeMessage } from '../types';
+
+export const DEFAULT_MESSAGES: BikeMessage[] = [
+  {
+    id: 'msg-001',
+    text: 'Pull Over',
+    icon: 'car-brake-alert',
+    color: '#E74C3C',
+    order: 0,
+    sendCount: 0,
+  },
+  {
+    id: 'msg-002',
+    text: 'Petrol Fill',
+    icon: 'gas-station',
+    color: '#F39C12',
+    order: 1,
+    sendCount: 0,
+  },
+  {
+    id: 'msg-003',
+    text: 'Wrong Route',
+    icon: 'map-marker-alert',
+    color: '#9B59B6',
+    order: 2,
+    sendCount: 0,
+  },
+  {
+    id: 'msg-004',
+    text: 'Take Rest',
+    icon: 'coffee',
+    color: '#2ECC71',
+    order: 3,
+    sendCount: 0,
+  },
+  {
+    id: 'msg-005',
+    text: 'Speed Up',
+    icon: 'speedometer',
+    color: '#3498DB',
+    order: 4,
+    sendCount: 0,
+  },
+  {
+    id: 'msg-006',
+    text: 'Slow Down',
+    icon: 'speedometer-slow',
+    color: '#1ABC9C',
+    order: 5,
+    sendCount: 0,
+  },
+  {
+    id: 'msg-007',
+    text: 'Emergency',
+    icon: 'alert-octagon',
+    color: '#C0392B',
+    order: 6,
+    sendCount: 0,
+  },
+  {
+    id: 'msg-008',
+    text: 'Wait for Me',
+    icon: 'hand-back-left',
+    color: '#E67E22',
+    order: 7,
+    sendCount: 0,
+  },
+];
